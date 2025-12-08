@@ -19,17 +19,15 @@
     "description": "Apresentação do programador",
     "image": "https://via.placeholder.com/400x200?text=Dashboard",
     "link": "https://guiaparecido.online"
-  }
-
-   {
+  },
+  {
     "id": 4,
     "title": "Landing page feito em curso Alura",
     "description": "Projeto feito durante um curso de responsividade da alura, feito para um possível site assinatura streaming.",
     "image": "https://via.placeholder.com/400x200?text=Dashboard",
     "link": "https://indiobagual.github.io/aluraplus/"
-  }
-
-     {
+  },
+  {
     "id": 5,
     "title": "Landing page feito em curso Alura",
     "description": "Projeto feito durante um curso de responsividade da alura, feito para um possível site de vendas de livros.",
