@@ -30,7 +30,7 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="container">
-          <h1>Meu Portfólio <span>React</span></h1>
+          <h1>Portfólio  <span>Guilherme Aparecido</span></h1>
           <p>Desenvolvedor Front-end | UI/UX Enthusiast</p>
         </div>
       </header>
@@ -49,7 +49,7 @@ function App() {
       </main>
 
       <footer style={{ textAlign: 'center', padding: '20px', color: '#666' }}>
-        <p>© 2024 - Desenvolvido com React.</p>
+        <p>© 2025 - Desenvolvido com React.</p>
       </footer>
     </div>
   );
