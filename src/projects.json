@@ -3,35 +3,35 @@
     "id": 1,
     "title": "Projeto de 7DaysOfCode",
     "description": "Um projeto realizado em um desafio de 7DaysOfCode seguindo o desafio deste link: https://7daysofcode.io/matricula/html-css",
-    "image": "src/assets/optimustech.png",
+    "image": "/optimustech.png",
     "link": "https://indiobagual.github.io/7DaysOfCode/"
   },
   {
     "id": 2,
     "title": "Landing Page para Clínica",
     "description": "Landing Page para Clínica Multidisciplinar de Rio Grande",
-    "image": "src/assets/recriar.png",
+    "image": "/recriar.png",
     "link": "https://www.clinicarecriarrg.com"
   },
   {
     "id": 3,
     "title": "Landing Page de apresentação",
     "description": "Apresentação do programador",
-    "image": "src/assets/guiaparecido.png",
+    "image": "/guiaparecido.png",
     "link": "https://guiaparecido.online"
   },
   {
     "id": 4,
     "title": "Landing page feito em curso Alura",
     "description": "Projeto feito durante um curso de responsividade da alura, feito para um possível site assinatura streaming.",
-    "image": "src/assets/aluraplus.png",
+    "image": "/aluraplus.png",
     "link": "https://indiobagual.github.io/aluraplus/"
   },
   {
     "id": 5,
     "title": "Landing page feito em curso Alura",
     "description": "Projeto feito durante um curso de responsividade da alura, feito para um possível site de vendas de livros.",
-    "image": "src/assets/alurabooks.png",
+    "image": "/alurabooks.png",
     "link": "https://indiobagual.github.io/alura-books/"
   }
 ]
