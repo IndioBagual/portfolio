@@ -18,7 +18,7 @@ const ProjectCard = ({ data }) => {
           rel="noopener noreferrer" 
           className="btn-link"
         >
-          Aceder ao Projeto
+          Acessar o Projeto
         </a>
       </div>
     </div>
