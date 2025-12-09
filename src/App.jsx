@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 
-// 1. IMPORTAÇÃO DOS DADOS
-// O Vite/React permite importar JSON diretamente e converte-o para Javascript automaticamente.
+// Importação dos dados
 import projectsData from './projects.json';
 
 const ProjectCard = ({ data }) => {
@@ -30,25 +29,41 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="container">
-          <h1>Portfólio  <span>Guilherme Aparecido</span></h1>
-          <p>Desenvolvedor Front-end | UI/UX Enthusiast</p>
+          <h1>Portfólio <span>Guilherme Aparecido</span></h1>
+          <p>Desenvolvedor Front-end</p>
+          
+          {/* NOVA ÁREA: Botões de Redes Sociais */}
+          <div className="header-social">
+            <a 
+              href="https://github.com/indiobagual" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="social-btn github"
+            >
+              GitHub
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/guilherme-aaparecido" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="social-btn linkedin"
+            >
+              LinkedIn
+            </a>
+          </div>
+
         </div>
       </header>
 
       <main className="container">
         <div className="projects-grid">
-          
-          {/* 2. USAR A VARIÁVEL IMPORTADA */}
-          {/* Agora usamos 'projectsData' em vez da variável antiga */}
-          
           {projectsData.map((project) => (
             <ProjectCard key={project.id} data={project} />
           ))}
-          
         </div>
       </main>
 
-      <footer style={{ textAlign: 'center', padding: '20px', color: '#666' }}>
+      <footer style={{ textAlign: 'center', padding: '40px 20px', color: '#666', marginTop: '40px' }}>
         <p>© 2025 - Desenvolvido com React.</p>
       </footer>
     </div>
