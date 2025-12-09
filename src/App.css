@@ -1,10 +1,12 @@
-/* src/App.css */
+/* --- src/App.css --- */
+
+/* 1. Variáveis e Reset */
 :root {
   --bg-color: #f8f9fa;
   --text-color: #2d3436;
   --primary: #0984e3;
   --secondary: #2d3436;
-  --header-bg: #1e272e; /* Fundo escuro para o cabeçalho */
+  --header-bg: #1e272e;
   --card-bg: #ffffff;
 }
 
@@ -17,6 +19,8 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
 }
 
 .container {
@@ -26,10 +30,10 @@ body {
   width: 100%;
 }
 
-/* --- HEADER / CABEÇALHO --- */
+/* 3. Header */
 .header {
-  background-color: var(--header-bg); /* Garante o fundo escuro */
-  color: white; /* Garante que o texto seja branco */
+  background-color: var(--header-bg);
+  color: white;
   padding: 80px 0;
   text-align: center;
   margin-bottom: 60px;
@@ -40,23 +44,23 @@ body {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 16px;
-  color: white; /* Força branco no título */
+  color: white;
 }
 
 .header span {
-  color: #00d2d3; /* Turquesa destaque */
+  color: #00d2d3;
   display: inline-block;
   margin-left: 10px;
 }
 
 .header p {
   font-size: 1.2rem;
-  color: #b2bec3; /* Cinza claro */
+  color: #b2bec3;
   max-width: 600px;
   margin: 0 auto;
 }
 
-/* --- REDES SOCIAIS --- */
+/* 4. Botões de Redes Sociais - ATUALIZADO PARA ÍCONES */
 .header-social {
   margin-top: 32px;
   display: flex;
@@ -66,16 +70,20 @@ body {
 
 .social-btn {
   text-decoration: none;
-  padding: 10px 28px;
+  padding: 10px 24px;
   border-radius: 50px;
   font-weight: 600;
   font-size: 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
-  display: inline-block;
+  
+  /* Flexbox para alinhar ícone e texto */
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o ícone e o texto */
 }
 
 .social-btn.github {
-  background-color: #333; /* Fundo escuro para destacar no header */
+  background-color: #333;
   color: white;
   border: 1px solid rgba(255,255,255,0.2);
 }
@@ -91,16 +99,72 @@ body {
   filter: brightness(1.1);
 }
 
-/* --- GRID DE PROJETOS --- */
+/* 5. Secções Sobre Mim e Habilidades */
+.about-section {
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.about-section h2, .skills-section h2 {
+  color: var(--secondary);
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #636e72;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Tag de Habilidade - ATUALIZADO PARA ÍCONES */
+.skill-tag {
+  background-color: #e1f5fe;
+  color: #0277bd;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid #b3e5fc;
+  transition: transform 0.2s;
+
+  /* Flexbox para alinhar ícone e texto */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-tag:hover {
+  transform: scale(1.05);
+  background-color: #b3e5fc;
+  cursor: default;
+}
+
+/* 6. Grid de Projetos */
 .projects-grid {
   display: grid;
-  /* Cria colunas automáticas */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
   padding-bottom: 80px;
 }
 
-/* --- CARD --- */
 .card {
   background: var(--card-bg);
   border-radius: 16px;
@@ -118,11 +182,10 @@ body {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
 }
 
-/* Esta classe conserta a imagem gigante */
 .card-image {
   width: 100%;
-  height: 220px; /* Altura fixa para alinhar */
-  object-fit: cover; /* Recorta a imagem para caber sem distorcer */
+  height: 220px;
+  object-fit: cover;
   display: block;
 }
 
@@ -161,4 +224,12 @@ body {
 
 .btn-link:hover {
   background-color: #0652dd;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
 }
