@@ -1,48 +1,42 @@
-/* --- Adicionar ao final do src/App.css --- */
+/* ... (mantenha o CSS anterior do passo anterior) ... */
 
-/* Área dos botões sociais */
+/* ESTILOS NOVOS PARA OS BOTÕES SOCIAIS */
 .header-social {
   margin-top: 32px;
   display: flex;
   justify-content: center;
-  gap: 16px; /* Espaço entre os botões */
+  gap: 16px;
 }
 
-/* Estilo base dos botões sociais */
 .social-btn {
   text-decoration: none;
   padding: 10px 28px;
-  border-radius: 50px; /* Borda redonda estilo "pílula" */
+  border-radius: 50px;
   font-weight: 600;
   font-size: 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
   display: inline-block;
 }
 
-/* Cor específica do GitHub */
 .social-btn.github {
-  background-color: #333;
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
-  border: 2px solid #333;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .social-btn.github:hover {
-  background-color: #555;
-  border-color: #555;
+  background-color: white;
+  color: #333;
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-/* Cor específica do LinkedIn */
 .social-btn.linkedin {
-  background-color: #0077b5; /* Azul oficial do LinkedIn */
+  background-color: #0077b5;
   color: white;
-  border: 2px solid #0077b5;
+  border: 1px solid #0077b5;
 }
 
 .social-btn.linkedin:hover {
   background-color: #005885;
-  border-color: #005885;
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,119,181,0.4);
 }

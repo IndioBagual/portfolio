@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-
-// Importação dos dados
 import projectsData from './projects.json';
 
 const ProjectCard = ({ data }) => {
@@ -30,9 +28,9 @@ function App() {
       <header className="header">
         <div className="container">
           <h1>Portfólio <span>Guilherme Aparecido</span></h1>
-          <p>Desenvolvedor Front-end</p>
+          <p>Desenvolvedor Front-end | UI/UX Enthusiast</p>
           
-          {/* NOVA ÁREA: Botões de Redes Sociais */}
+          {/* Adicionamos os botões aqui */}
           <div className="header-social">
             <a 
               href="https://github.com/indiobagual" 
@@ -43,7 +41,7 @@ function App() {
               GitHub
             </a>
             <a 
-              href="https://www.linkedin.com/in/guilherme-aaparecido" 
+              href="https://www.linkedin.com/in/seu-perfil" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-btn linkedin"
