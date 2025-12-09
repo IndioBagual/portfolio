@@ -1,9 +1,13 @@
+/* src/index.css */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  
+  /* Garante que o fundo base seja claro e o texto escuro */
+  color: #213547;
+  background-color: #ffffff;
 
-  color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,8 +17,7 @@
 body {
   margin: 0;
   padding: 0;
+  display: block; /* Importante para desfazer o 'flex' do Vite */
+  min-width: 320px;
   min-height: 100vh;
-  /* Removemos o 'display: flex' e 'place-items: center' que causavam o bug */
-  display: block; 
-  background-color: #f8f9fa; /* Garante que o fundo não fique preto/escuro por padrão */
 }
