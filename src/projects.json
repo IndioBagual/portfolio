@@ -33,5 +33,12 @@
     "description": "Projeto feito durante um curso de responsividade da alura, feito para um possível site de vendas de livros.",
     "image": "/alurabooks.png",
     "link": "https://indiobagual.github.io/alura-books/"
+  },
+  {
+    "id": 6,
+    "title": "Landing page para loja de itens personalizados com atualização de portfólio",
+    "description": "Projeto feito durante um curso de responsividade da alura, feito para um possível site de vendas de livros.",
+    "image": "/printapluri.png",
+    "link": "https://printapluri.netlify.app"
   }
 ]
